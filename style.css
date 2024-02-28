@@ -1,0 +1,55 @@
+:root{
+    --green: rgb(157, 224, 149);
+    --red: rgb(255, 138, 138);
+}
+body{
+    background-color: rgb(39, 39, 39);
+}
+
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+p{
+    font-size: 100px;
+    text-align: center;
+    font-family: fantasy;
+    color: white;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+    
+}
+button{
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+#increase{
+    background-color: var(--green);
+}
+#decrease{
+    background-color: var(--red);
+}
+
+@media screen and (min-width: 600px) {
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly; 
+        
+    }
+    button{
+        width: 350px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
